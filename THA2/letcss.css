@@ -1,0 +1,32 @@
+
+body{
+	background-image: url("https://images.pexels.com/photos/2008145/pexels-photo-2008145.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+img{
+  opacity: 0.13;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 400px;
+  height: 400px;
+  margin-left:870px;
+  margin-top:240px;
+}		
+#heading{
+			display: flex;
+			flex: auto;
+		}
+		#body{
+			background: linear-gradient(to bottom, #ccffff 0%, #ffffff 100%);
+			border: 2px solid black ;
+            padding-top: 3px;
+			padding-bottom:3px ;
+			padding-left:5px;
+			padding-right: 5px;
+			margin-top: 20px;
+			 margin-left: 750px;
+			 margin-right:100px;
+			 border-radius: 2%;
+		}
