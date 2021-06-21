@@ -1,0 +1,155 @@
+body{
+    margin-top:100px;
+    justify-content: center;
+    background:url('https://img.freepik.com/free-vector/futuristic-horizon-background-with-blue-light_52683-25182.jpg?size=626&ext=jpg&ga=GA1.2.1445824779.1623974400');
+    background-size:cover ;
+}
+#box{
+    display: flex;
+}
+td{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+#stage{
+    margin-top: 81px;
+    max-width: 400px;;
+    perspective: 1000px;
+    margin-left:0% ;
+    }
+    #stage1{
+        margin-top: 81px;
+        perspective: 2000px;
+        margin-right:80px ;
+        }
+
+    #im {
+        height:200px;
+        border-radius: 2em;
+        transition-property: transform;
+        transition-duration: 0.7s;
+        transform: matrix3d(-0.7109, 0, -0.703279, 0,
+        0, 1, 0, 0,
+        -0.703279, 0, -0.7109, 0,
+        0, 0, 0, 1);
+        box-reflect :below 15px
+        gradient(linear, left top, left bottom, from(transparent),
+        color-stop(0.7, transparent), to(#ff0000));
+    }
+    #im {
+        margin-left:100px;
+        height:200px;
+        border-radius: 2em;
+        -webkit-transition-property: -webkit-transform;
+        -webkit-transition-duration: 0.7s;
+        -moz-transition-property: -moz-transform;
+        -moz-transition-duration: 0.7s;
+        -ms-transition-property: -ms-transform;
+        -ms-transition-duration: 0.7s;
+        transition-property: transform;
+        transition-duration: 0.7s;
+        position: relative;
+        transform: matrix3d(0.7109, 0, -0.703279, 
+        0, 0, 1, 0, 0, 0.703279, 
+        0, 0.7109, 0, 0, 0, 0, 1);
+        width: 400px;
+        height: 200px;
+        -webkit-box-reflect: below 15px -webkit-gradient(linear, left top, left bottom, 
+        from(transparent), color-stop(0.7, transparent), to(#ff0000));
+    }
+    #im:hover {
+        transition-property: transform;
+        transition-duration: 0.7s;
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 200, 1);
+        z-index: 1000;
+    }
+    #im1 {
+        height:200px;
+        width: 419px;
+        border-radius: 2em;
+        -webkit-transition-property: -webkit-transform;
+        -webkit-transition-duration: 0.7s;
+        -moz-transition-property: -moz-transform;
+        -moz-transition-duration: 0.7s;
+        -ms-transition-property: -ms-transform;
+        -ms-transition-duration: 0.7s;
+        transition-property: transform;
+        transition-duration: 0.7s;
+        position: relative;
+        transform: matrix3d(0.7109, 0, 0.703279, 
+        0,0, 1, 0, 0,0.703279, 
+        0, 0.7109, 0, 0, 0, 0, 1);
+        -webkit-box-reflect: below 10px -webkit-gradient(linear, left top, left bottom, 
+        from(transparent), color-stop(0.7, transparent), to(#ff0000));
+    }
+    #im1:hover {
+        transition-property: transform;
+        transition-duration: 0.7s;
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 200, 1);
+        z-index: 1000;
+    }
+.counting{
+ display:flex;
+ flex:auto;
+}
+
+#show{
+    font-size: large;
+    width:80px;
+    height:40px;
+    color:rgb(222, 243, 243);
+    text-shadow: black;
+    font-size: 26px;;
+    padding-left:45px;
+    padding-top:10px;
+    margin-bottom: 20px;
+    margin-left: 264px;
+    margin-right:30px;
+    border-radius: 2em;
+    margin-left: 614px;
+    background: rgba( 73, 198, 198, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.0px );
+    -webkit-backdrop-filter: blur( 0.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#show1{
+    font-size: large;
+    width:80px;
+    height:40px;
+    color:rgb(222, 243, 243);
+    text-shadow: black;
+    font-size: 26px;;
+    padding-left:45px;
+    padding-top:10px;
+    margin-bottom: 20px;
+    margin-right:30px;
+    border-radius: 2em;
+    background: rgba( 73, 198, 198, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.0px );
+    -webkit-backdrop-filter: blur( 0.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.main{
+    height: 318px;
+    margin-left:50px;
+    padding-left: 40px;
+    margin-left:80px;
+    padding-top: 6px;
+    background: rgba( 73, 198, 198, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.0px );
+    -webkit-backdrop-filter: blur( 0.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.seatfilled{
+   color: rgb(0, 247, 255);
+}
+i{
+    cursor:pointer;
+}

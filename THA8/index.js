@@ -3,7 +3,6 @@ for (i = 0; i <20; i++) {
     row+='<td></td>';
   }
   row+='</tr>';
-  console.log(row);
 var content='';
 for(i=0;i<20;i++){
     content+=row;
