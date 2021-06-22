@@ -24,7 +24,7 @@ td{
         margin-right:80px ;
         }
 
-    #im {
+    /* #im {
         height:200px;
         border-radius: 2em;
         transition-property: transform;
@@ -33,10 +33,10 @@ td{
         0, 1, 0, 0,
         -0.703279, 0, -0.7109, 0,
         0, 0, 0, 1);
-        box-reflect :below 15px
+        -wekit-box-reflect :below 15px
         gradient(linear, left top, left bottom, from(transparent),
         color-stop(0.7, transparent), to(#ff0000));
-    }
+    } */
     #im {
         margin-left:100px;
         height:200px;
