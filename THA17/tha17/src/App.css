@@ -1,0 +1,30 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: cyan;
+}
+.App {
+  text-align: center;
+  align-content:center;
+}
+.container{
+  text-align: center;
+  align-content:center;
+  border:2px solid black;
+  width: 500px;
+  height: 400px;
+  position: relative;
+  top:0%;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  margin: auto;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  background-color: white;
+}

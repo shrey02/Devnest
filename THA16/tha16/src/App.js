@@ -4,7 +4,7 @@ import Chess from './Chess';
 function App() {
   return (
     <div className="App">
-     <Card name="meme.jpg"/>
+     <Card img="/meme.jpg"/>
      <Chess/>
     </div>
   );

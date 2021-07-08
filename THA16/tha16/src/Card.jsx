@@ -1,8 +1,8 @@
 import React from 'react';
 import './Card.css';
-function Card(props){
+function Card({img}){
 return (
-<div className="box"><img src={`${props.name}`}  alt="meme" /></div>
+<div className="box"><img src={img}  alt="meme" /></div>
 );
 }
 export default Card;

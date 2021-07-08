@@ -1,0 +1,18 @@
+.card{
+    border:2px solid black;
+    width:400px;
+    min-height:200px;
+    margin:20px;
+    background-color: rgb(39, 196, 123);
+    border-radius: .5rem;
+    box-shadow: 0 0 8px 5px grey;
+    text-align: left;
+    position: relative;
+    padding: 10px;
+}
+h3{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 50px;
+    
+}
