@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+
+.card{
+  border:2px solid black;
+  width:400px;
+  min-height:200px;
+  margin:20px;
+  background-color: rgb(39, 196, 123);
+  border-radius: .5rem;
+  box-shadow: 0 0 8px 5px grey;
+  text-align: left;
+  position: relative;
+  padding: 10px;
+}
+h3{
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 50px;
+  
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: cyan;
+}
+.App {
+  text-align: center;
+  align-content:center;
+}
+.container{
+  text-align: center;
+  align-content:center;
+  border:2px solid black;
+  width: 500px;
+  height: 400px;
+  position: relative;
+  top:0%;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  margin: auto;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  background-color: white;
+}
+button{
+  margin-left:250px;
+  margin-top: -40px;
+  position: absolute;
+  padding: 10px;
+  border-radius:1rem;
+  background-color: rgb(45, 66, 24);
+  color:white;
+}
