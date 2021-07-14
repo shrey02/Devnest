@@ -132,6 +132,7 @@ function App() {
        variant="outlined"
        value={title} onChange={(e)=>{
         setTitle(e.target.value);
+        console.log(e.target.value);
       }}></TextField>
 
 
