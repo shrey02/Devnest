@@ -3,10 +3,10 @@ import "./Templates.css";
 
 export default function Templates({ memes }) {
   const [select, setSelect] = useState(false);
-  const [meme, setMeme] = useState(null);
+  const [meme, setMeme] = useState({id:null});
   const [down, setDown] = useState("");
   const [form, setForm] = useState({
-    template_id: null,
+    template_id: meme.id,
     Username: "ShreySinha",
     password: "myself2244",
     boxes: [],
@@ -15,13 +15,19 @@ export default function Templates({ memes }) {
     let url = `https://api.imgflip.com/caption_image?template_id=${form.template_id}&username=${form.Username}&password=${form.password}`;
     form.boxes.map((box, index) => {
       url += `&boxes[${index}][text]=${box.text}`;
+      (async()=>{
+        const response = await fetch(url);
+        const data =await response.json();
+        if (data.success) setMeme({ ...meme, url: data.data.url });
+      })();
     });
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
-        setMeme({ ...meme, url: data.data.url });
-        setDown(data.data.url);
-      });
+   
+    // fetch(url)
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     setMeme({ ...meme, url: data.data.url });
+    //     setDown(data.data.url);
+    //   });
   };
 
   const download = (e) => {
