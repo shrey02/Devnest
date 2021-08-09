@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./Templates.css";
+
 
 export default function Templates({ memes }) {
   const [select, setSelect] = useState(false);
@@ -18,16 +19,11 @@ export default function Templates({ memes }) {
       (async()=>{
         const response = await fetch(url);
         const data =await response.json();
-        if (data.success) setMeme({ ...meme, url: data.data.url });
+        if (data.success) {setMeme({ ...meme, url: data.data.url })
+        setDown(data.data.url);
+      };
       })();
     });
-   
-    // fetch(url)
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     setMeme({ ...meme, url: data.data.url });
-    //     setDown(data.data.url);
-    //   });
   };
 
   const download = (e) => {
