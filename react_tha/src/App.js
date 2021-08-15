@@ -3,11 +3,13 @@ import './App.css';
 import Memegenerator from './components/THA22/MemeGenerator';
 import Custom from './components/THA23/Custom';
 import Nav from './components/THA24/Nav';
+import Landing from './components/THA25/Landing'
 import { Link, Route, Switch } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const useStyles = makeStyles({
   root: {
@@ -23,6 +25,7 @@ function App() {
      <div>
       <Paper className={classes.root}>
         <Tabs centered>
+        <Link to="/tha25"><Tab label="THA25"/></Link>
          <Link to="/tha24"><Tab label="THA24"/></Link> 
          <Link to="/tha23"><Tab label="THA23"/></Link> 
          <Link to="/tha22"><Tab label="THA22"/></Link> 
@@ -42,6 +45,9 @@ function App() {
         </Route>
         <Route path="/tha24">
           <Nav />
+        </Route>
+        <Route path="/tha25">
+          <Landing/>
         </Route>
       </Switch>
       </div>
