@@ -3,7 +3,8 @@ import './App.css';
 import Memegenerator from './components/THA22/MemeGenerator';
 import Custom from './components/THA23/Custom';
 import Nav from './components/THA24/Nav';
-import Landing from './components/THA25/Landing'
+import Landing from './components/THA25/Landing';
+import Form from './components/THA26/Form';
 import { Link, Route, Switch } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -25,6 +26,7 @@ function App() {
      <div>
       <Paper className={classes.root}>
         <Tabs centered>
+        <Link to="/tha26"><Tab label="THA26"/></Link> 
         <Link to="/tha25"><Tab label="THA25"/></Link>
          <Link to="/tha24"><Tab label="THA24"/></Link> 
          <Link to="/tha23"><Tab label="THA23"/></Link> 
@@ -48,6 +50,9 @@ function App() {
         </Route>
         <Route path="/tha25">
           <Landing/>
+        </Route>
+        <Route path="/tha26">
+          <Form/>
         </Route>
       </Switch>
       </div>
