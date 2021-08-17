@@ -3,7 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import './Form.css';
 import { useSelector , useDispatch } from 'react-redux';
-import { changeEmail,changeName } from '../../Actions';
+import { changeEmail, changeName } from '../../Actions';
+import { useState } from 'react';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -20,16 +21,21 @@ function Form() {
     const myEmail = useSelector((state)=>state.email);
     const classes = useStyles();
     const dispatch = useDispatch();
+    const [name,setName] = useState("");
+    const [email,setEmail] = useState("");
     return (
         <div className="form">
         <div  className={classes.root}>
            <TextField
           id="outlined-textarea"
-          label="Multiline Placeholder"
-          placeholder="Placeholder"
+          label="Add Name"
           multiline
           variant="outlined"
-          value = {myName} 
+          value = {name} 
+          onChange={(e) => {
+            e.preventDefault();
+            setName(e.target.value);
+          }}
         />  
         <TextField
               style={{
@@ -41,13 +47,21 @@ function Form() {
               multiline
               variant="outlined"
               type='number'
+              value={email}
                onChange={(e) => {
                 e.preventDefault();
+                setEmail(e.target.value);
               }}>
             </TextField>
             <button onClick={()=>{
-                dispatch(changeEmail())
-            }}></button>
+                dispatch(changeEmail(email))
+                dispatch(changeName(name))
+                setName("")
+                setEmail("")
+            }}>Submit</button>
+            <div>{myName}</div>
+
+            <div>{myEmail}</div>
         </div>
         </div>
     )

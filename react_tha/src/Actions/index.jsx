@@ -1,10 +1,12 @@
-export const changeName = ()=> {
+export const changeName = (value)=> {
     return {
-        type : "Name"
+        type : "Name",
+        name : value
     }
 }
-export const changeEmail = ()=> {
+export const changeEmail = (value)=> {
     return {
-        type:"Email"
+        type : "Email",
+        email : value 
     }
 }
