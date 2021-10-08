@@ -1,4 +1,4 @@
-Structure - mybooks
+# Structure - mybooks
 
 /api/users
 
@@ -6,9 +6,9 @@ Structure - mybooks
 
 /api/books
 
-/api/books&tag=<tag name>
+/api/books&tag=(tag name)
 
-Routes 
+# Routes - for site
 
 get user - /api/users/:userId/profile 
 
